@@ -35,7 +35,7 @@ stage('Build') {
             unstash 'source'
             dir('user'){
                 script{
-                    bat ' mvn clean install -DskipTests' 
+                    bat ' "C:\\maven\\bin\\mvn.cmd" clean install -DskipTests' 
                 }
             }
       }
